@@ -12,6 +12,8 @@ class School
   def add_student(new_student, grade)
     @roster[grade] = []
     # @roster[grade] << new_student
+    
+    
   
   end
   
