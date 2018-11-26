@@ -17,9 +17,11 @@ class School
       new_student.each do |student|
         @roster[grade] << student
         return @roster
-      else
+      end
+    else
         @roster[grade] << new_student
       end
+    
     return roster
   end
   
