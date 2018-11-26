@@ -13,8 +13,14 @@ class School
     @roster[grade] = []
     # @roster[grade] << new_student
     
-    if new_student.class == Array.class
-  
+    if new_student.class == [].class
+      new_student.each do |student|
+        @roster[grade] << student
+        return @roster
+      else
+        @roster[grade] << new_student
+      end
+    return roster
   end
   
   def grade(roster)
