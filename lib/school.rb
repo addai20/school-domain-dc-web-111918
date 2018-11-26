@@ -13,7 +13,7 @@ class School
     @roster[grade] = []
     # @roster[grade] << new_student
     
-    
+    if new_student.class == Array.class
   
   end
   
